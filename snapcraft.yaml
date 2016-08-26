@@ -1,0 +1,16 @@
+name: slack
+version: 2.1.1
+summary: A messaging app for teams
+description: |
+  Slack brings all your communication together in one place.
+  Its real-time messaging, archiving and search for modern teams.
+confinement: devmode
+
+apps:
+  slack:
+    command: bin/slack
+    plugs: [network, network-bind]
+
+parts:
+    slack:
+        source: https://downloads.slack-edge.com/linux_releases/slack-desktop-2.1.1-amd64.deb
