@@ -11,6 +11,6 @@ apps:
     command: bin/slack
     plugs: [network, network-bind]
 
-parts:
-    slack:
+    parts:
+      slack:
         source: https://downloads.slack-edge.com/linux_releases/slack-desktop-2.1.1-amd64.deb
